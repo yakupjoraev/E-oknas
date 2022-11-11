@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-okna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="main__body">
+  <!--
+    <div class="consultation">
+        <div class="consultation__info consultation__info--mobile">
+            Онлайн-консультация
+        </div>
+        <div class="consultation__info consultation__info--desktop">
+            Получить онлайн-консультацию
+        </div>
+        <ul class="consultation__list">
+            <li class="consultation__item">
+                <a class="consultation__link" href="">
+                    <img src="img/consultation/watsapp.png" alt="иконка ватсап">
+                </a>
+            </li>
+            <li class="consultation__item">
+                <a class="consultation__link" href="">
+                    <img src="img/consultation/tele.png" alt="иконка телеграмм">
+                </a>
+            </li>
+            <li class="consultation__item">
+                <a class="consultation__link" href="">
+                    <img src="img/consultation/exclude.png" alt=" иконка клоуд">
+                </a>
+            </li>
+            <li class="consultation__btn">
+                <img src="img/consultation/close.png" alt="иконка закрык">
+            </li>
+        </ul>
+    </div>
+    -->
+  <!-- Header -->
+  <header class="header" id="header">
+    <!-- Navbar -->
+    <nav class="js-nav">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"><a href="#header"><img src="img/logo-header.svg" alt="логотип"></a></div>
+
+          <div class="logo--tablet">
+            <a href=""><svg width="79" height="46" viewBox="0 0 79 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.12942 42.3318H2.97334C3.22461 43.1751 3.93654 43.681 5.02537 43.681C5.86293 43.681 6.40734 43.4281 6.95176 42.9643L8.50124 44.6086C7.70556 45.5362 6.4911 46 4.89973 46C1.96827 45.9579 0 44.1027 0 41.5729C0 39.0009 1.96827 37.1879 4.64846 37.1879C7.16115 37.1879 9.17129 38.7901 9.17129 41.6151C9.17129 41.8259 9.12942 42.121 9.12942 42.3318ZM2.93146 40.7718H6.40734C6.23983 39.8864 5.61166 39.2961 4.69034 39.2961C3.72715 39.2961 3.09898 39.8864 2.93146 40.7718Z"
+                  fill="#24B7B1" />
+                <path d="M10.4695 40.2237H15.0342V42.5005H10.4695V40.2237Z" fill="#24B7B1" />
+                <path
+                  d="M16.3743 41.5729C16.3743 39.0009 18.3845 37.1879 21.1484 37.1879C23.9542 37.1879 25.9225 39.0009 25.9225 41.5729C25.9225 44.1448 23.9542 46 21.1484 46C18.3845 45.9579 16.3743 44.1448 16.3743 41.5729ZM22.9073 41.5729C22.9073 40.2658 22.1535 39.5491 21.1484 39.5491C20.1433 39.5491 19.3895 40.2658 19.3895 41.5729C19.3895 42.8799 20.1852 43.5967 21.1484 43.5967C22.1535 43.5967 22.9073 42.8799 22.9073 41.5729Z"
+                  fill="#24B7B1" />
+                <path
+                  d="M31.1154 42.8378L30.236 43.7232V45.7892H27.2626V34.1943H30.236V40.308L33.2512 37.3566H36.7689L33.2512 40.9826L37.0621 45.8314H33.4606L31.1154 42.8378Z"
+                  fill="#24B7B1" />
+                <path
+                  d="M46.9034 40.9826V45.8314H43.972V41.4464C43.972 40.2237 43.4276 39.7177 42.59 39.7177C41.6268 39.7177 40.9149 40.308 40.9149 41.7415V45.8314H37.9415V37.3144H40.7474V38.242C41.4174 37.5252 42.3806 37.1879 43.4275 37.1879C45.3958 37.1879 46.9034 38.3263 46.9034 40.9826Z"
+                  fill="#24B7B1" />
+                <path
+                  d="M56.7029 41.1091V45.8314H53.9389V44.7351C53.5202 45.5362 52.6826 45.9579 51.4263 45.9579C49.4161 45.9579 48.2854 44.8195 48.2854 43.3437C48.2854 41.7837 49.4161 40.814 52.0544 40.814H53.7296C53.6877 39.9707 53.1014 39.4647 51.9288 39.4647C51.1331 39.4647 50.2118 39.7599 49.6255 40.1815L48.6204 38.1577C49.5836 37.5252 51.0075 37.1879 52.3476 37.1879C55.1115 37.1879 56.7029 38.4107 56.7029 41.1091ZM53.7296 43.0908V42.374H52.4313C51.4681 42.374 51.1331 42.7113 51.1331 43.2173C51.1331 43.7232 51.5519 44.0605 52.2219 44.0605C52.892 44.1027 53.4783 43.7654 53.7296 43.0908Z"
+                  fill="#24B7B1" />
+                <path
+                  d="M58.043 44.187C58.043 43.1329 58.8387 42.4162 59.8019 42.4162C60.8069 42.4162 61.5607 43.0908 61.5607 44.187C61.5607 45.2411 60.8069 45.9579 59.8019 45.9579C58.7968 45.9579 58.043 45.2411 58.043 44.187Z"
+                  fill="#24B7B1" />
+                <path
+                  d="M68.6381 37.1879V39.8864C68.3869 39.8442 68.1775 39.8442 67.9681 39.8442C66.7536 39.8442 65.9579 40.4766 65.9579 41.9524V45.8735H62.9846V37.3144H65.7904V38.3685C66.3767 37.5674 67.3818 37.1879 68.6381 37.1879Z"
+                  fill="#24B7B1" />
+                <path
+                  d="M78.7308 37.3144V45.8314H75.9249V44.9038C75.2968 45.6205 74.3754 45.9579 73.4122 45.9579C71.3602 45.9579 69.8107 44.7773 69.8107 42.0788V37.3144H72.7841V41.5729C72.7841 42.8799 73.2866 43.4281 74.166 43.4281C75.0455 43.4281 75.7574 42.8378 75.7574 41.4042V37.3144H78.7308Z"
+                  fill="#24B7B1" />
+                <path d="M31.4512 28.2493H30.153V2.99358H47.7837V11.8057H50.757V0H27.1797V31.2429H31.4512V28.2493Z"
+                  fill="#24B7B1" />
+                <path
+                  d="M50.7571 31.2429H32.9589V13.1127H50.7571V21.9248L40.6226 23.9908L40.0363 21.0816L47.7837 19.4794V16.1063H35.9322V28.2493H47.7837V26.0568H50.7571V31.2429Z"
+                  fill="#24B7B1" />
+              </svg>
+            </a>
+          </div>
+          <div class="logo--mobile">
+            <a href=""><svg width="122" height="18" viewBox="0 0 122 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_160_1710)">
+                  <path
+                    d="M14.0888 12.4071H4.58856C4.97633 13.6929 6.075 14.4643 7.75532 14.4643C9.04787 14.4643 9.88803 14.0786 10.7282 13.3714L13.1194 15.8786C11.8915 17.2929 10.0173 18 7.56144 18C3.0375 17.9357 0 15.1071 0 11.25C0 7.32857 3.0375 4.56429 7.17367 4.56429C11.0513 4.56429 14.1535 7.00715 14.1535 11.3143C14.1535 11.6357 14.0888 12.0857 14.0888 12.4071ZM4.52394 10.0286H9.88803C9.62952 8.67857 8.66011 7.77857 7.2383 7.77857C5.75186 7.77857 4.78245 8.67857 4.52394 10.0286Z"
+                    fill="#24B7B1" />
+                  <path d="M16.1569 9.19287H23.2013V12.6643H16.1569V9.19287Z" fill="#24B7B1" />
+                  <path
+                    d="M25.2694 11.25C25.2694 7.32857 28.3715 4.56429 32.637 4.56429C36.967 4.56429 40.0045 7.32857 40.0045 11.25C40.0045 15.1714 36.967 18 32.637 18C28.3715 17.9357 25.2694 15.1714 25.2694 11.25ZM35.3513 11.25C35.3513 9.25715 34.188 8.16429 32.637 8.16429C31.0859 8.16429 29.9226 9.25715 29.9226 11.25C29.9226 13.2429 31.1505 14.3357 32.637 14.3357C34.188 14.3357 35.3513 13.2429 35.3513 11.25Z"
+                    fill="#24B7B1" />
+                  <path
+                    d="M48.0183 13.1786L46.6612 14.5286V17.6786H42.0726V0H46.6612V9.32143L51.3144 4.82143H56.7431L51.3144 10.35L57.1955 17.7429H51.6375L48.0183 13.1786Z"
+                    fill="#24B7B1" />
+                  <path
+                    d="M72.383 10.35V17.7429H67.859V11.0571C67.859 9.19286 67.0189 8.42143 65.7263 8.42143C64.2399 8.42143 63.1412 9.32143 63.1412 11.5071V17.7429H58.5527V4.75715H62.8827V6.17143C63.9168 5.07857 65.4032 4.56429 67.0189 4.56429C70.0564 4.56429 72.383 6.3 72.383 10.35Z"
+                    fill="#24B7B1" />
+                  <path
+                    d="M87.5058 10.5429V17.7429H83.2404V16.0714C82.5941 17.2929 81.3016 17.9357 79.3628 17.9357C76.2606 17.9357 74.5157 16.2 74.5157 13.95C74.5157 11.5714 76.2606 10.0929 80.3322 10.0929H82.9173C82.8527 8.80715 81.9479 8.03572 80.1383 8.03572C78.9104 8.03572 77.4886 8.48572 76.5838 9.12858L75.0327 6.04286C76.5192 5.07858 78.7165 4.56429 80.7846 4.56429C85.05 4.56429 87.5058 6.42858 87.5058 10.5429ZM82.9173 13.5643V12.4714H80.9138C79.4274 12.4714 78.9104 12.9857 78.9104 13.7571C78.9104 14.5286 79.5566 15.0429 80.5907 15.0429C81.6247 15.1071 82.5295 14.5929 82.9173 13.5643Z"
+                    fill="#24B7B1" />
+                  <path
+                    d="M89.5739 15.2357C89.5739 13.6286 90.8019 12.5357 92.2883 12.5357C93.8394 12.5357 95.0027 13.5643 95.0027 15.2357C95.0027 16.8429 93.8394 17.9357 92.2883 17.9357C90.7372 17.9357 89.5739 16.8429 89.5739 15.2357Z"
+                    fill="#24B7B1" />
+                  <path
+                    d="M105.925 4.56429V8.67857C105.537 8.61429 105.214 8.61429 104.891 8.61429C103.016 8.61429 101.789 9.57857 101.789 11.8286V17.8071H97.2V4.75715H101.53V6.36429C102.435 5.14286 103.986 4.56429 105.925 4.56429Z"
+                    fill="#24B7B1" />
+                  <path
+                    d="M121.5 4.75714V17.7428H117.17V16.3286C116.201 17.4214 114.779 17.9357 113.292 17.9357C110.126 17.9357 107.734 16.1357 107.734 12.0214V4.75714H112.323V11.25C112.323 13.2429 113.098 14.0786 114.456 14.0786C115.813 14.0786 116.911 13.1786 116.911 10.9929V4.75714H121.5Z"
+                    fill="#24B7B1" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_160_1710">
+                    <rect width="121.5" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#offer_stocks" class="menu__item-link js-scroll" data-scroll>Акции</a>
+            </li>
+            <li class="menu__item">
+              <a href="#calc" class="menu__item-link js-scroll" data-scroll>Калькулятор</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about" class="menu__item-link js-scroll" data-scroll>О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#footer" class="menu__item-link js-scroll" data-scroll>Контакты</a>
+            </li>
+            <li class="menu__item menu__item-btn button">
+              <a href="#send-request-modal" data-fancybox class="menu__item-link">Отправить заявку</a>
+            </li>
+          </ul>
+          <div class="burger">
+            <span></span>
+          </div>
+          <div class="navbar__btn">
+            <a href="#send-request-modal" data-fancybox class="navbar__btn-link button">Отправить заявку</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Page -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__info">
+            <div class="hero__info-header">
+              <h1 class="hero__info-title">
+                Максимальный комфорт
+              </h1>
+            </div>
+            <div class="hero__info-middle">
+              <ul class="hero__info-list">
+                <li class="hero__info-item">
+                  На каждом этапе сотрудничества:
+                </li>
+
+                <li class="hero__info-item">
+                  заказ окон
+                  <span class="hero__info-item--black">
+                    онлайн
+                  </span>
+                </li>
+
+                <li class="hero__info-item">
+                  оплата по
+                  <span class="hero__info-item--black">
+                    QR-коду
+                  </span>
+                </li>
+
+                <li class="hero__info-item">
+                  <span class="hero__info-item--black">
+                    видео-презентация
+                  </span> конструкций
+                </li>
+
+                <li class="hero__info-item">
+                  <span class="hero__info-item--black">
+                    фотофиксация
+                  </span>результата!
+                </li>
+              </ul>
+              <a href="#send-request-modal" data-fancybox class="hero__info-link button">Отправить заявку</a>
+            </div>
+          </div>
+          <div class="hero__img">
+            <img class="hero__img-img" src="img/hero-bg.jpg" alt="фото довольной собаки">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer" id="offer">
+      <div class="container">
+        <div class="offer__what">
+          <div class="offer__what-inner">
+            <h2 class="offer__what-title">
+              Что мы<br>предлагаем
+            </h2>
+            <div class="offer__what-arrows">
+              <button class="offer__what-arrow offer__what-arrow--prew disable">
+                <svg width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M46.5 12.5C47.3284 12.5 48 13.1716 48 14C48 14.8284 47.3284 15.5 46.5 15.5V12.5ZM1.5 14L0.439339 15.0607C-0.146446 14.4749 -0.146446 13.5251 0.439339 12.9393L1.5 14ZM12.9393 0.43934C13.5251 -0.146447 14.4749 -0.146447 15.0607 0.43934C15.6464 1.02513 15.6464 1.97487 15.0607 2.56066L12.9393 0.43934ZM15.0607 25.4393C15.6464 26.0251 15.6464 26.9749 15.0607 27.5607C14.4749 28.1464 13.5251 28.1464 12.9393 27.5607L15.0607 25.4393ZM46.5 15.5H1.5V12.5H46.5V15.5ZM0.439339 12.9393L12.9393 0.43934L15.0607 2.56066L2.56066 15.0607L0.439339 12.9393ZM2.56066 12.9393L15.0607 25.4393L12.9393 27.5607L0.439339 15.0607L2.56066 12.9393Z"
+                    fill="#B3B3B2" />
+                </svg>
+              </button>
+              <button class="offer__what-arrow offer__what-arrow--next">
+                <svg width="64" height="38" viewBox="0 0 64 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 17.4997C1.17157 17.4997 0.5 18.1712 0.5 18.9997C0.5 19.8281 1.17157 20.4997 2 20.4997V17.4997ZM62 18.9997L63.0607 20.0603C63.6464 19.4745 63.6464 18.5248 63.0607 17.939L62 18.9997ZM46.394 1.27235C45.8082 0.686561 44.8585 0.686561 44.2727 1.27235C43.6869 1.85813 43.6869 2.80788 44.2727 3.39367L46.394 1.27235ZM44.2727 34.6057C43.6869 35.1915 43.6869 36.1412 44.2727 36.727C44.8585 37.3128 45.8082 37.3128 46.394 36.727L44.2727 34.6057ZM2 20.4997H62V17.4997H2V20.4997ZM63.0607 17.939L46.394 1.27235L44.2727 3.39367L60.9393 20.0603L63.0607 17.939ZM60.9393 17.939L44.2727 34.6057L46.394 36.727L63.0607 20.0603L60.9393 17.939Z"
+                    fill="#1D1D1B" />
+                </svg>
+              </button>
+            </div>
+            <div class="offer__what-slider">
+              <div class="offer__what-columns">
+                <div class="offer__what-body">
+                  <div data-index="0" class="offer__what-img active"
+                    style="background-image: url('/img/offer/offer-what-1.png');">
+                    <div class="offer__what-shadow">
+                      <h3 class="offer__what-heading">
+                        Технологичность во всём
+                      </h3>
+                      <p class="offer__what-desc">
+                        Максимально технологичные окна и сервис: от заказа, до постгарантийного
+                        обслуживания – экономим ваше
+                        время, оперативно решаем ваши задачи.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer__what-body">
+                  <div data-index="1" class="offer__what-img"
+                    style="background-image: url('/img/offer/offer-what-2.png');">
+                    <div class="offer__what-shadow">
+                      <h3 class="offer__what-heading">
+                        Тотальный контроль
+                      </h3>
+                      <p class="offer__what-desc">
+                        Мы производим тотальный контроль всех установленных конструкций силами
+                        службы контроля качества.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer__what-body">
+                  <div data-index="2" class="offer__what-img"
+                    style="background-image: url('/img/offer/offer-what-3.png');">
+                    <div class="offer__what-shadow">
+                      <h3 class="offer__what-heading">
+                        Экспертная надежность
+                      </h3>
+                      <p class="offer__what-desc">
+                        Руководитель службы контроля качества – эксперт с 12-летним опытом в сфере
+                        строительно-технической
+                        судебной экспертизы, от внимания которого не укроется ни один нюанс монтажа.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer__what-body">
+                  <div data-index="3" class="offer__what-img"
+                    style="background-image: url('/img/offer/offer-what-4.png');">
+                    <div class="offer__what-shadow">
+                      <h3 class="offer__what-heading">
+                        Без переплат
+                      </h3>
+                      <p class="offer__what-desc">
+                        Наши специалисты предложат оптимальное решение именно вашей задачи без
+                        переплат за ненужные вам
+                        опции.
+                        Мы не обещаем вам «самые дешевые окна», мы предлагаем вам гарантированно
+                        высокое качество по
+                        оптимальной
+                        цене!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offer__stock" id="offer_stocks">
+          <div class="offer__stock-inner">
+            <h2 class="offer__stock-title">
+              Акции
+            </h2>
+            <div class="offer__stock-arrows">
+              <button class="offer__stock-arrow offer__stock-arrow--prew disable">
+                <svg width="48" height="28" viewBox="0 0 48 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M46.5 12.5C47.3284 12.5 48 13.1716 48 14C48 14.8284 47.3284 15.5 46.5 15.5V12.5ZM1.5 14L0.439339 15.0607C-0.146446 14.4749 -0.146446 13.5251 0.439339 12.9393L1.5 14ZM12.9393 0.43934C13.5251 -0.146447 14.4749 -0.146447 15.0607 0.43934C15.6464 1.02513 15.6464 1.97487 15.0607 2.56066L12.9393 0.43934ZM15.0607 25.4393C15.6464 26.0251 15.6464 26.9749 15.0607 27.5607C14.4749 28.1464 13.5251 28.1464 12.9393 27.5607L15.0607 25.4393ZM46.5 15.5H1.5V12.5H46.5V15.5ZM0.439339 12.9393L12.9393 0.43934L15.0607 2.56066L2.56066 15.0607L0.439339 12.9393ZM2.56066 12.9393L15.0607 25.4393L12.9393 27.5607L0.439339 15.0607L2.56066 12.9393Z"
+                    fill="#B3B3B2" />
+                </svg>
+              </button>
+              <button class="offer__stock-arrow offer__stock-arrow--next">
+                <svg width="64" height="38" viewBox="0 0 64 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 17.4997C1.17157 17.4997 0.5 18.1712 0.5 18.9997C0.5 19.8281 1.17157 20.4997 2 20.4997V17.4997ZM62 18.9997L63.0607 20.0603C63.6464 19.4745 63.6464 18.5248 63.0607 17.939L62 18.9997ZM46.394 1.27235C45.8082 0.686561 44.8585 0.686561 44.2727 1.27235C43.6869 1.85813 43.6869 2.80788 44.2727 3.39367L46.394 1.27235ZM44.2727 34.6057C43.6869 35.1915 43.6869 36.1412 44.2727 36.727C44.8585 37.3128 45.8082 37.3128 46.394 36.727L44.2727 34.6057ZM2 20.4997H62V17.4997H2V20.4997ZM63.0607 17.939L46.394 1.27235L44.2727 3.39367L60.9393 20.0603L63.0607 17.939ZM60.9393 17.939L44.2727 34.6057L46.394 36.727L63.0607 20.0603L60.9393 17.939Z"
+                    fill="#1D1D1B" />
+                </svg>
+              </button>
+            </div>
+            <div class="offer__stock-items">
+              <div class="offer__stock-slider">
+                <div data-index="0" class="offer__stock-body active">
+                  <h3 class="offer__stock-heading">
+                    10 лет гарантии
+                  </h3>
+                  <p class="offer__stock-desc">
+                    Мы берем на себя самые высокие обязательства, так как уверены в качестве наших окон, комплектующих и
+                    монтажа
+                  </p>
+                </div>
+                <div data-index="1" class="offer__stock-body">
+                  <h3 class="offer__stock-heading">
+                    Рассрочка 0-0-6
+                  </h3>
+                  <p class="offer__stock-desc">
+                    Рассрочка на пластиковые окна и натяжные потолки в Мордовии до 6 месяцев!
+                    Подробности у менеджеров в офисе.
+                  </p>
+                </div>
+                <div data-index="2" class="offer__stock-body">
+                  <h3 class="offer__stock-heading">
+                    -30% на окна без монтажа
+                  </h3>
+                  <p class="offer__stock-desc">
+                    Мы имеем возможность предложить вам окна высочайшего качества без монтажа по цене на
+                    30-40% ниже рынка.
+                    По
+                    этим ценам получают от нас окна наши дилеры и сейчас эта цена доступна всем клиентам
+                    компании E-okna.
+                    Торопитесь, предложение ограничено. Подробности у менеджеров в офисе.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer__order">
+          <h4 class="offer__order-title">
+            Закажи окна<br> по выгодной
+            цене
+          </h4>
+          <div class="offer__order-text">
+            Низкий уровень теплопотерь. Звукоизоляция мирового уровня. Полная непроницаемость для пыли,
+            влажности и
+            сквозняков.
+          </div>
+          <a href="#send-request-modal" data-fancybox class="offer__order-link button">Сделать заказ</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="calc" id="calc">
+      <div class="container">
+        <div id="js-form-calc" class="calc__form">
+
+          <h3 class="calc__title">
+            Калькулятор пластиковых<br>
+            окон онлайн
+          </h3>
+
+          <div class="calc__step active-step" data-step="1" data-step-next="2" data-step-prew="false">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Выберите — куда вам нужны окна
+                </h4>
+                <p class="calc__header-desc">
+                  Выберите тип помещения для установки.
+                </p>
+              </div>
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  0%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 0;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc__middle">
+              <ul class="calc__middle-list">
+
+                <li class="calc__middle-item">
+                  <input value="Квартира" type="radio" checked id="select-home-one" name="typeOfRoom"
+                    class="calc__middle-input">
+                  <label class="calc__middle-label" for="select-home-one">
+                    <div class="calc__middle-img">
+                      <img src="img/calc/calc-home-1.jpg" alt=" выбор дома">
+                    </div>
+                    <div class="calc__middle-items">
+                      <div class="calc__middle-checked"></div>
+                      <div class="calc__middle-name">Квартира</div>
+                    </div>
+                  </label>
+                </li>
+
+                <li class="calc__middle-item">
+                  <input value="Частный дом" type="radio" id="select-home-two" name="typeOfRoom"
+                    class="calc__middle-input">
+                  <label class="calc__middle-label" for="select-home-two">
+                    <div class="calc__middle-img">
+                      <img src="img/calc/calc-home-2.jpg" alt=" выбор дома">
+                    </div>
+                    <div class="calc__middle-items">
+                      <div class="calc__middle-checked"></div>
+                      <div class="calc__middle-name">Частный дом</div>
+                    </div>
+                  </label>
+                </li>
+
+                <li class="calc__middle-item">
+                  <input value="Офис" type="radio" id="select-home-three" name="typeOfRoom" class="calc__middle-input">
+                  <label class="calc__middle-label" for="select-home-three">
+                    <div class="calc__middle-img">
+                      <img src="img/calc/calc-home-3.jpg" alt=" выбор дома">
+                    </div>
+                    <div class="calc__middle-items">
+                      <div class="calc__middle-checked"></div>
+                      <div class="calc__middle-name">Офис</div>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="calc__step" data-step="2" data-step-next="3" data-step-prew="1">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Сколько створок будет в вашем окне?
+                </h4>
+                <p class="calc__header-desc">
+                  Выберите подходящую конструкцию.
+                </p>
+              </div>
+
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  12%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 12%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc__middle calc__middle--step-two">
+              <ul class="calc__middle-list">
+                <li class="calc__middle-item">
+                  <input data-img="img/calc/step-2-1.png" data-value="Одностворчатое окно" value="4-1" checked
+                    type="radio" id="select-step-two-one" name="numberOfFlaps" class="calc__middle-input">
+                  <label class="calc__middle-label" for="select-step-two-one">
+                    <div class="calc__middle-img img--step-two">
+                      <img src="img/calc/step-2-1.png" alt="Выберите количество створок">
+                    </div>
+                    <div class="calc__middle-items">
+                      <div class="calc__middle-checked"></div>
+                      <div class="calc__middle-name">Одностворчатое окно</div>
+                    </div>
+                  </label>
+                </li>
+
+                <li class="calc__middle-item">
+                  <input data-img="img/calc/step-2-2.png" data-value="Двухстворчатое окно" value="4-2" type="radio"
+                    id="select-step-two-two" name="numberOfFlaps" class="calc__middle-input">
+                  <label class="calc__middle-label" for="select-step-two-two">
+                    <div class="calc__middle-img img--step-two">
+                      <img src="img/calc/step-2-2.png" alt="Выберите количество створок">
+                    </div>
+                    <div class="calc__middle-items">
+                      <div class="calc__middle-checked"></div>
+                      <div class="calc__middle-name">Двухстворчатое окно</div>
+                    </div>
+                  </label>
+                </li>
+
+                <li class="calc__middle-item">
+                  <input data-img="img/calc/step-2-3.png" data-value="Трехстворчатое окно" value="4-3" type="radio"
+                    id="select-step-two-three" name="numberOfFlaps" class="calc__middle-input">
+                  <label class="calc__middle-label" for="select-step-two-three">
+                    <div class="calc__middle-img img--step-two">
+                      <img src="img/calc/step-2-3.png" alt="Выберите количество створок">
+                    </div>
+                    <div class="calc__middle-items">
+                      <div class="calc__middle-checked"></div>
+                      <div class="calc__middle-name">Трехстворчатое окно</div>
+                    </div>
+                  </label>
+                </li>
+
+                <li class="calc__middle-item">
+                  <input data-img="img/calc/step-2-4.png" data-value="Балконный блок" value="4-4" type="radio"
+                    id="select-step-two-four" name="numberOfFlaps" class="calc__middle-input">
+                  <label class="calc__middle-label" for="select-step-two-four">
+                    <div class="calc__middle-img img--step-two">
+                      <img src="img/calc/step-2-4.png" alt="Выберите количество створок">
+                    </div>
+                    <div class="calc__middle-items">
+                      <div class="calc__middle-checked"></div>
+                      <div class="calc__middle-name">Балконный блок</div>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+
+              <div class="custom-windows">
+                <a data-fancybox href="#custom-windows-modal" class="calculation__button"
+                  style="margin-bottom: 0;margin-top: 20px;">
+                  Нестандартное окно
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="calc__step" data-step="3" data-step-next="variants" data-step-prew="2">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Размеры окна
+                </h4>
+                <p class="calc__header-desc">
+                  Установите ширину окна и его высоту в миллиметрах.
+                </p>
+              </div>
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  25%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 25%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc__size">
+              <div class="additional-choice__group">
+                <label class="additional-choice__check-label" for="calc-size-none">
+                  <div class="additional-choice__checkmark"></div>
+                  <span>Не знаю размера</span>
+                </label>
+                <input id="calc-size-none" name="windowDimensionsNone" type="checkbox"
+                  class="additional-choice__checkbox" value="Не знаю размера">
+              </div>
+
+              <div class="calc__size-group-container">
+                <div class="calc__size-group">
+                  <label class="calc__size-label" for="calc-size-height">
+                    Ширина, мм
+                  </label>
+                  <input name="windowHeight" id="calc-size-height" type="number"
+                    placeholder="Укажите значение от 400 до 3 000" class="calc__size-input">
+                </div>
+
+                <div class="calc__size-group">
+                  <label class="calc__size-label" for="calc-size-width">
+                    Высота, мм
+                  </label>
+                  <input name="windowWidth" id="calc-size-width" type="number"
+                    placeholder="Укажите значение от 400 до 3 000" class="calc__size-input">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!--Варианты створок start-->
+          <div class="calc__step" data-step="4-1" data-step-next="5" data-step-prew="2">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Открывание оконных створок
+                  <div class="calc__tooltip-container">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_475_3193)">
+                        <path
+                          d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                          stroke="#24B7B1" stroke-width="1.3" />
+                        <path
+                          d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                          stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_475_3193">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="calc__tooltip">
+                      Какие бывают варианты открывания пластикового окна: их преимущества и недостатки.
+                    </span>
+                  </div>
+                </h4>
+                <p class="calc__header-desc">
+                  Укажите тип открывания каждой створки.
+                </p>
+              </div>
+
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  37%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 37%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc__sash">
+              <div class="calc__sash-img">
+                <img id="step_4_1" src="img/calc/step-4-1.png" alt="">
+              </div>
+              <div class="calc__sash-selected">
+                <p class="calc__sash-name">Створка</p>
+
+                <div class="calc__sash-selected-mobile-value-2-1">Глухая</div>
+
+                <div class="calc__sash-selected-labels">
+                  <label for="calc-sash-one" class="calc__sash-label">
+                    <input data-name="Створка" value="Глухая" type="radio" checked name="sash_4_1" id="calc-sash-one"
+                      class="calc__sash-input">
+                    <div class="calc__sash-check"></div>
+                    <p class="calc__sash-desc">
+                      Глухая
+                    </p>
+                  </label>
+
+                  <label for="calc-sash-two" class="calc__sash-label">
+                    <input data-name="Створка" value="Поворотная" type="radio" name="sash_4_1" id="calc-sash-two"
+                      class="calc__sash-input">
+                    <div class="calc__sash-check"></div>
+                    <p class="calc__sash-desc">
+                      Поворотная
+                    </p>
+                  </label>
+
+                  <label for="calc-sash-three" class="calc__sash-label">
+                    <input data-name="Створка" value="Поворотно-откидная" type="radio" name="sash_4_1"
+                      id="calc-sash-three" class="calc__sash-input">
+                    <div class="calc__sash-check"></div>
+                    <p class="calc__sash-desc">
+                      Поворотно-откидная
+                    </p>
+                  </label>
+                </div>
+
+                <div id="accessoriesSash_4_1" data-active="false" class="calc__sash-optional" style="display: none">
+                  <p class="calc__sash-text">
+                    Дополнительные аксессуары:
+                  </p>
+
+                  <label class="calc__sash-switch">
+                    <input value="Москитная сетка" type="checkbox" name="sashGrid_4_1">
+                    <span class="calc__sash-slider"></span>
+                    <p class="calc__sash-description">Москитная сетка</p>
+                  </label>
+
+                  <label class="calc__sash-switch">
+                    <input value="Детский замок" type="checkbox" name="sashCastle_4_1">
+                    <span class="calc__sash-slider"></span>
+                    <p class="calc__sash-description">Детский замок</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc__step" data-step="4-2" data-step-next="5" data-step-prew="2">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Выберите тип открывания створок
+                  <div class="calc__tooltip-container">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_475_3193)">
+                        <path
+                          d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                          stroke="#24B7B1" stroke-width="1.3" />
+                        <path
+                          d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                          stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_475_3193">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="calc__tooltip">
+                      Какие бывают варианты открывания пластикового окна: их преимущества и недостатки.
+                    </span>
+                  </div>
+                </h4>
+
+                <p class="calc__header-desc">
+                  Настройте варианты открывания створок.
+                </p>
+              </div>
+
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  37%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 37%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc__sash-container">
+              <div class="calc__sash-inner">
+                <div class="calc__sash-img">
+                  <img id="step_4_2" src="img/calc/step-4-2-1-2.png" alt="">
+                </div>
+
+                <div class="calc__sash-selected-container">
+                  <div class="calc__sash-selected">
+                    <p class="calc__sash-name">
+                      Левая створка
+                    </p>
+
+                    <div class="calc__sash-selected-mobile-value-2-2-1">Глухая</div>
+
+                    <div class="calc__sash-selected-labels">
+                      <label for="calc-sash-two-one" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Глухая" type="radio" checked name="leftSash_4_2"
+                          id="calc-sash-two-one" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Глухая</p>
+                      </label>
+
+                      <label for="calc-sash-two-two" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Поворотная" type="radio" name="leftSash_4_2"
+                          id="calc-sash-two-two" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотная</p>
+                      </label>
+
+                      <label for="calc-sash-two-three" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Поворотно-откидная" type="radio" name="leftSash_4_2"
+                          id="calc-sash-two-three" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотно-откидная</p>
+                      </label>
+                    </div>
+
+                    <div id="accessoriesleftSash_4_2" data-active="false" class="calc__sash-optional"
+                      style="display: none">
+                      <p class="calc__sash-text">
+                        Дополнительные аксессуары:
+                      </p>
+
+                      <label class="calc__sash-switch">
+                        <input value="Москитная сетка" type="checkbox" name="leftSashGrid_4_2">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Москитная сетка</p>
+                      </label>
+
+                      <label class="calc__sash-switch">
+                        <input value="Детский замок" type="checkbox" name="leftSashCastle_4_2">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Детский замок</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc__sash-selected">
+                    <p class="calc__sash-name">
+                      Правая створка
+                    </p>
+
+                    <div class="calc__sash-selected-mobile-value-2-2-2">Поворотная</div>
+
+                    <div class="calc__sash-selected-labels">
+                      <label for="calc-sash-two-four" class="calc__sash-label">
+                        <input data-name="Правая створка" value="Глухая" type="radio" name="rightSash_4_2"
+                          id="calc-sash-two-four" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Глухая</p>
+                      </label>
+
+                      <label for="calc-sash-two-five" class="calc__sash-label">
+                        <input data-name="Правая створка" value="Поворотная" type="radio" checked name="rightSash_4_2"
+                          id="calc-sash-two-five" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотная</p>
+                      </label>
+
+                      <label for="calc-sash-two-six" class="calc__sash-label">
+                        <input data-name="Правая створка" value="Поворотно-откидная" type="radio" name="rightSash_4_2"
+                          id="calc-sash-two-six" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотно-откидная</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div id="accessoriesRightSash_4_2" data-active="true" class="calc__sash-optional">
+                    <p class="calc__sash-text">
+                      Дополнительные аксессуары:
+                    </p>
+
+                    <label class="calc__sash-switch">
+                      <input value="Москитная сетка" type="checkbox" name="rightSashGrid_4_2">
+                      <span class="calc__sash-slider"></span>
+                      <p class="calc__sash-description">Москитная сетка</p>
+                    </label>
+
+                    <label class="calc__sash-switch">
+                      <input value="Детский замок" type="checkbox" name="rightSashCastle_4_2">
+                      <span class="calc__sash-slider"></span>
+                      <p class="calc__sash-description">Детский замок</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc__step" data-step="4-3" data-step-next="5" data-step-prew="2">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Выберите тип открывания створок
+                  <div class="calc__tooltip-container">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_475_3193)">
+                        <path
+                          d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                          stroke="#24B7B1" stroke-width="1.3" />
+                        <path
+                          d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                          stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_475_3193">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="calc__tooltip">
+                      Какие бывают варианты открывания пластикового окна: их преимущества и недостатки.
+                    </span>
+                  </div>
+                </h4>
+                <p class="calc__header-desc">
+                  Настройте варианты открывания створок.
+                </p>
+              </div>
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  37%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 37%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc__sash-container">
+              <div class="calc__sash-inner">
+                <div class="calc__sash-img">
+                  <img id="step_4_3" src="img/calc/step-4-3-1-2-3.png" alt="">
+                </div>
+
+                <div class="calc__sash-selected-container">
+                  <div class="calc__sash-selected">
+                    <p class="calc__sash-name">Левая створка</p>
+
+                    <div class="calc__sash-selected-mobile-value-2-3-1">Глухая</div>
+
+                    <div class="calc__sash-selected-labels">
+                      <label for="calc-sash-three-one" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Глухая" type="radio" checked name="leftSash_4_3"
+                          id="calc-sash-three-one" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Глухая</p>
+                      </label>
+
+                      <label for="calc-sash-three-two" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Поворотная" type="radio" name="leftSash_4_3"
+                          id="calc-sash-three-two" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотная</p>
+                      </label>
+
+                      <label for="calc-sash-three-three" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Поворотно-откидная" type="radio" name="leftSash_4_3"
+                          id="calc-sash-three-three" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотно-откидная</p>
+                      </label>
+                    </div>
+
+                    <div id="accessoriesLeftSash_4_3" data-active="false" class="calc__sash-optional"
+                      style="display: none">
+                      <p class="calc__sash-text">
+                        Дополнительные аксессуары:
+                      </p>
+                      <label class="calc__sash-switch">
+                        <input value="Москитная сетка" type="checkbox" name="leftSashGrid_4_3">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Москитная сетка</p>
+                      </label>
+                      <label class="calc__sash-switch">
+                        <input value="Детский замок" type="checkbox" name="leftSashCastle_4_3">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Детский замок</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc__sash-selected">
+                    <p class="calc__sash-name">Центральная створка</p>
+
+                    <div class="calc__sash-selected-mobile-value-2-3-2">Поворотная</div>
+
+                    <div class="calc__sash-selected-labels">
+                      <label for="calc-sash-three-four" class="calc__sash-label">
+                        <input data-name="Центральная створка" value="Глухая" type="radio" name="centerSash_4_3"
+                          id="calc-sash-three-four" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Глухая</p>
+                      </label>
+
+                      <label for="calc-sash-three-six" class="calc__sash-label">
+                        <input data-name="Центральная створка" value="Поворотная" type="radio" checked
+                          name="centerSash_4_3" id="calc-sash-three-six" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотная</p>
+                      </label>
+
+                      <label for="calc-sash-three-seven" class="calc__sash-label">
+                        <input data-name="Центральная створка" value="Поворотно-откидная" type="radio"
+                          name="centerSash_4_3" id="calc-sash-three-seven" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотно-откидная</p>
+                      </label>
+                    </div>
+
+                    <div id="accessoriesCenterSash_4_3" data-active="false" class="calc__sash-optional">
+                      <p class="calc__sash-text">
+                        Дополнительные аксессуары:
+                      </p>
+                      <label class="calc__sash-switch">
+                        <input value="Москитная сетка" type="checkbox" name="centerSashGrid_4_3">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Москитная сетка</p>
+                      </label>
+                      <label class="calc__sash-switch">
+                        <input value="Детский замок" type="checkbox" name="centerSashCastle_4_3">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Детский замок</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc__sash-selected">
+                    <p class="calc__sash-name">Правая створка</p>
+
+                    <div class="calc__sash-selected-mobile-value-2-3-3">Поворотно-откидная</div>
+
+                    <div class="calc__sash-selected-labels">
+                      <label for="calc-sash-three-eight" class="calc__sash-label">
+                        <input data-name="Правая створка" value="Глухая" type="radio" name="rightSash_4_3"
+                          id="calc-sash-three-eight" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Глухая</p>
+                      </label>
+
+                      <label for="calc-sash-three-nine" class="calc__sash-label">
+                        <input data-name="Правая створка" value="Поворотная" type="radio" name="rightSash_4_3"
+                          id="calc-sash-three-nine" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотная</p>
+                      </label>
+
+                      <label for="calc-sash-three-ten" class="calc__sash-label">
+                        <input data-name="Правая створка" value="Поворотно-откидная" type="radio" checked
+                          name="rightSash_4_3" id="calc-sash-three-ten" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотно-откидная</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div id="accessoriesRightSash_4_3" data-active="false" class="calc__sash-optional">
+                    <p class="calc__sash-text">
+                      Дополнительные аксессуары:
+                    </p>
+
+                    <label class="calc__sash-switch">
+                      <input value="Москитная сетка" type="checkbox" name="rightSashGrid_4_3">
+                      <span class="calc__sash-slider"></span>
+                      <p class="calc__sash-description">Москитная сетка</p>
+                    </label>
+
+                    <label class="calc__sash-switch">
+                      <input value="Детский замок" type="checkbox" name="rightSashCastle_4_3">
+                      <span class="calc__sash-slider"></span>
+                      <p class="calc__sash-description">Детский замок</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="calc__step" data-step="4-4" data-step-next="5" data-step-prew="2">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Выберите тип открывания створок
+                  <div class="calc__tooltip-container">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_475_3193)">
+                        <path
+                          d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                          stroke="#24B7B1" stroke-width="1.3" />
+                        <path
+                          d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                          stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_475_3193">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="calc__tooltip">
+                      Какие бывают варианты открывания пластикового окна: их преимущества и недостатки.
+                    </span>
+                  </div>
+                </h4>
+
+                <p class="calc__header-desc">
+                  Настройте варианты открывания створок.
+                </p>
+              </div>
+
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  37%
+                </div>
+
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 37%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc__sash-container">
+              <div class="calc__sash-inner">
+                <div class="calc__sash-img">
+                  <img id="step_4_4" src="img/calc/step-4-4-1-1.png" alt="">
+                </div>
+
+                <div class="calc__sash-selected-container">
+                  <div class="calc__sash-selected">
+                    <p class="calc__sash-name">Дверь</p>
+
+                    <div class="calc__sash-selected-mobile-value-2-4-1">Поворотная</div>
+
+                    <div class="calc__sash-selected-labels">
+                      <label for="calc-sash-five-one" class="calc__sash-label">
+                        <input data-name="Дверь" value="Поворотная" type="radio" checked name="door_4_4"
+                          id="calc-sash-five-one" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотная</p>
+                      </label>
+                      <label for="calc-sash-five-two" class="calc__sash-label">
+                        <input data-name="Дверь" value="Поворотно-откидная" type="radio" name="door_4_4"
+                          id="calc-sash-five-two" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотно-откидная</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="calc__sash-selected">
+                    <p class="calc__sash-name">Створка</p>
+
+                    <div class="calc__sash-selected-mobile-value-2-4-2">Глухая</div>
+
+                    <div class="calc__sash-selected-labels">
+                      <label for="calc-sash-five-1" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Глухая" type="radio" checked name="leftSash_4_4"
+                          id="calc-sash-five-1" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Глухая</p>
+                      </label>
+
+                      <label for="calc-sash-five-2" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Поворотная" type="radio" name="leftSash_4_4"
+                          id="calc-sash-five-2" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотная</p>
+                      </label>
+
+                      <label for="calc-sash-five-3" class="calc__sash-label">
+                        <input data-name="Левая створка" value="Поворотно-откидная" type="radio" name="leftSash_4_4"
+                          id="calc-sash-five-3" class="calc__sash-input">
+                        <div class="calc__sash-check"></div>
+                        <p class="calc__sash-desc">Поворотно-откидная</p>
+                      </label>
+                    </div>
+
+                    <div id="accessoriesLeftSash_4_4" data-active="false" class="calc__sash-optional"
+                      style="display: none">
+                      <p class="calc__sash-text">
+                        Дополнительные аксессуары:
+                      </p>
+                      <label class="calc__sash-switch">
+                        <input value="Москитная сетка" type="checkbox" name="leftSashGrid_4_4">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Москитная сетка</p>
+                      </label>
+                      <label class="calc__sash-switch">
+                        <input value="Детский замок" type="checkbox" name="leftSashCastle_4_4">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Детский замок</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div id="js-right-sash-4-4" data-active="false" class="calc__sash calc__sash-selected--new"
+                    style="display: none">
+
+                    <div class="calc__sash-selected">
+
+                      <div class="calc__sash-name-delete">
+                        <p class="calc__sash-name">Правая створка</p>
+                        <button id="js-delete-button-right-sash-4-4" class="calc__sash-delete">Удалить</button>
+                      </div>
+
+                      <div class="calc__sash-selected-mobile-value-2-4-3">Поворотная</div>
+
+                      <div class="calc__sash-selected-labels">
+
+                        <label for="calc-sash-five-four1" class="calc__sash-label">
+                          <input data-name="Правая створка" value="Глухая" type="radio" name="rightSash_4_4"
+                            id="calc-sash-five-four1" class="calc__sash-input">
+                          <div class="calc__sash-check"></div>
+                          <p class="calc__sash-desc">Глухая</p>
+                        </label>
+
+                        <label for="calc-sash-five-four2" class="calc__sash-label">
+                          <input data-name="Правая створка" value="Поворотная" type="radio" checked name="rightSash_4_4"
+                            id="calc-sash-five-four2" class="calc__sash-input">
+                          <div class="calc__sash-check"></div>
+                          <p class="calc__sash-desc">Поворотная</p>
+                        </label>
+
+                        <label for="calc-sash-five-five" class="calc__sash-label">
+                          <input data-name="Правая створка" value="Поворотно-откидная" type="radio" name="rightSash_4_4"
+                            id="calc-sash-five-five" class="calc__sash-input">
+                          <div class="calc__sash-check"></div>
+                          <p class="calc__sash-desc">Поворотно-откидная</p>
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <!-- <div class="calc__sash-selected-mobile-wrapper">
+                      <div class="calc__sash-name-delete">
+                        <p class="calc__sash-name">Правая створка</p>
+                        <button id="js-delete-button-right-wing-2-4" class="calc__sash-delete">Удалить</button>
+                      </div>
+
+                      <div id="select-10">
+                        <input type="hidden" class="hidden__input">
+                      </div>
+                    </div> -->
+
+                    <div id="accessoriesRightSash_4_4" data-active="false" class="calc__sash-optional">
+                      <p class="calc__sash-text">
+                        Дополнительные аксессуары:
+                      </p>
+
+                      <label class="calc__sash-switch">
+                        <input value="Москитная сетка" name="rightSashGrid_4_4" type="checkbox">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Москитная сетка</p>
+                      </label>
+
+                      <label class="calc__sash-switch">
+                        <input value="Детский замок" name="rightSashCastle_4_4" type="checkbox">
+                        <span class="calc__sash-slider"></span>
+                        <p class="calc__sash-description">Детский замок</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc__sash-added">
+                <button id="js-add-button-right-sash-4-4" class="calc__sash-button">Добавить створку</button>
+              </div>
+            </div>
+          </div>
+          <!--Варианты створок end-->
+
+          <div class="calc__step" data-step="5" data-step-next="6" data-step-prew="3">
+            <div class="calc__header">
+
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Какие комплектующие нужны для вашего окна?
+                  <div class="calc__tooltip-container">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_475_3193)">
+                        <path
+                          d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                          stroke="#24B7B1" stroke-width="1.3" />
+                        <path
+                          d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                          stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_475_3193">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="calc__tooltip">
+                      Какие бывают варианты открывания пластикового окна: их преимущества и недостатки.
+                    </span>
+                  </div>
+                </h4>
+                <p class="calc__header-desc">
+                  Выберите дополнительные комплектующие из списка ниже.
+                </p>
+              </div>
+
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  50%
+                </div>
+
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 50%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-choice">
+              <div class="additional-choice__text">
+                Выберите комплектующие
+              </div>
+
+              <div class="additional-choice__checkboxes">
+                <div class="additional-choice__group">
+                  <label class="additional-choice__check-label" for="additional-choice-checkbox-one">
+                    <div class="additional-choice__checkmark"></div>
+                    <span>Подоконник</span>
+                  </label>
+                  <input value="Подоконник" name="windowsill" type="checkbox" id="additional-choice-checkbox-one"
+                    class="additional-choice__checkbox additional-choice__checkbox--check">
+                </div>
+
+                <div class="additional-choice__group">
+                  <label class="additional-choice__check-label" for="additional-choice-checkbox-two">
+                    <div class="additional-choice__checkmark"></div>
+                    <span>Откосы</span>
+                  </label>
+                  <input value="Откосы" name="slopes" type="checkbox" id="additional-choice-checkbox-two"
+                    class="additional-choice__checkbox additional-choice__checkbox--check">
+                </div>
+
+                <div class="additional-choice__group">
+                  <label class="additional-choice__check-label" for="additional-choice-checkbox-three">
+                    <div class="additional-choice__checkmark"></div>
+                    <span>Отливы</span>
+                  </label>
+                  <input value="Отливы" name="lowTide" type="checkbox" id="additional-choice-checkbox-three"
+                    class="additional-choice__checkbox additional-choice__checkbox--check">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="calc__step" data-step="6" data-step-next="7" data-step-prew="5">
+            <div class="calc__header">
+
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Сделайте ваше окно еще лучше!
+                  <div class="calc__tooltip-container">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_475_3193)">
+                        <path
+                          d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                          stroke="#24B7B1" stroke-width="1.3" />
+                        <path
+                          d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                          stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_475_3193">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="calc__tooltip">
+                      Какие бывают варианты открывания пластикового окна: их преимущества и недостатки.
+                    </span>
+                  </div>
+                </h4>
+
+                <p class="calc__header-desc">
+                  Мы рады предложить вам технологии, которые сделают вашу жизнь еще комфортнее! Выберите дополнительные
+                  опции, которые нужно реализовать в вашем окне:
+                </p>
+              </div>
+
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  62%
+                </div>
+
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 62%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-options">
+              <div class="calc-options__text">
+                Выберите нужные параметры <span>(этот шаг можно пропустить)</span>
+              </div>
+
+              <div class="calc-options__checkboxes">
+                <div class="calc-options__group">
+                  <label class="calc-options__check-label" for="calc-options-checkbox-one">
+                    <div class="calc-options__checkmark"></div>
+                    <div class="calc-options__desc">
+                      Шумоизоляция
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_475_3193)">
+                          <path
+                            d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                            stroke="#24B7B1" stroke-width="1.3" />
+                          <path
+                            d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                            stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_475_3193">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+
+                      </svg>
+                      <span class="calc__tooltip">
+                        Достигается использованием особых стеклопакетов, которые уменьшают проходимость звуковых волн в
+                        дом, квартиру или офис. Идеальное оконное решение для шумных улиц, районов города с высоким
+                        шумовым загрязнением.
+                      </span>
+                    </div>
+                  </label>
+                  <input value="Шумоизоляция" name="soundInsulation" type="checkbox" id="calc-options-checkbox-one"
+                    class="calc-options__checkbox">
+                </div>
+
+                <div class="calc-options__group">
+                  <label class="calc-options__check-label" for="calc-options-checkbox-two">
+                    <div class="calc-options__checkmark"></div>
+                    <div class="calc-options__desc">
+                      Энергосбережение
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_475_3193)">
+                          <path
+                            d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                            stroke="#24B7B1" stroke-width="1.3" />
+                          <path
+                            d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                            stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_475_3193">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+
+                      </svg>
+                      <span class="calc__tooltip">
+                        Это оконная конструкция со стеклопакетом, эффективно предотвращающим выход тепла из помещения на
+                        улицу, снижает вероятность запотевания внутренней стороны стеклопакета. Зимой с такими окнами в
+                        квартире или доме будет очень тепло.
+                      </span>
+                    </div>
+                  </label>
+                  <input value="Теплосбережение" name="heatSaving" type="checkbox" id="calc-options-checkbox-two"
+                    class="calc-options__checkbox">
+                </div>
+
+                <div class="calc-options__group">
+                  <label class="calc-options__check-label" for="calc-options-checkbox-three">
+                    <div class="calc-options__checkmark"></div>
+                    <div class="calc-options__desc">
+                      Солнцезащита
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_475_3193)">
+                          <path
+                            d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                            stroke="#24B7B1" stroke-width="1.3" />
+                          <path
+                            d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                            stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_475_3193">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+
+                      </svg>
+                      <span class="calc__tooltip">
+                        В основе солнцезащитного стеклопакета - стёкла с покрытием от проникновения ультрафиолета и
+                        инфракрасного излучения. Отлично зарекомендовали себя в окнах на южной стороне дома, позволяют
+                        хорошо экономить на кондиционировании помещения.
+                      </span>
+                    </div>
+                  </label>
+                  <input value="Солнцезащита" name="sunProtection" type="checkbox" id="calc-options-checkbox-three"
+                    class="calc-options__checkbox">
+                </div>
+
+                <div class="calc-options__group">
+                  <label class="calc-options__check-label" for="calc-options-checkbox-four">
+                    <div class="calc-options__checkmark"></div>
+                    <div class="calc-options__desc">
+                      Микропроветривание
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_475_3193)">
+                          <path
+                            d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                            stroke="#24B7B1" stroke-width="1.3" />
+                          <path
+                            d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                            stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_475_3193">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+
+                      </svg>
+                      <span class="calc__tooltip">
+                        Так называется дополнительный режим открывания створки, при котором она не откидывается
+                        полностью, а приоткрывается совсем немного для притока свежего воздуха в помещение. Эта функция
+                        очень удобна в любое время года, особенно в межсезонье.
+                      </span>
+                    </div>
+                  </label>
+                  <input value="Микропроветривание" name="microVentilation" type="checkbox"
+                    id="calc-options-checkbox-four" class="calc-options__checkbox">
+                </div>
+
+                <div class="calc-options__group">
+                  <label class="calc-options__check-label" for="calc-options-checkboxfive">
+                    <div class="calc-options__checkmark"></div>
+                    <div class="calc-options__desc">
+                      Противовзломность
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_475_3193)">
+                          <path
+                            d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                            stroke="#24B7B1" stroke-width="1.3" />
+                          <path
+                            d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                            stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_475_3193">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+
+                      </svg>
+                      <span class="calc__tooltip">
+                        Противовзломные окна — это сочетание усиленного армированного профиля, противоударного
+                        стеклопакета и противовзломной фурнитуры
+                      </span>
+                    </div>
+                  </label>
+                  <input value="Противовзломность" name="antiBurglary" type="checkbox" id="calc-options-checkboxfive"
+                    class="calc-options__checkbox">
+                </div>
+
+                <div class="calc-options__group">
+                  <label class="calc-options__check-label" for="calc-options-checkbox-six">
+                    <div class="calc-options__checkmark"></div>
+                    <div class="calc-options__desc">
+                      Дизайнерские окна
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_475_3193)">
+                          <path
+                            d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                            stroke="#24B7B1" stroke-width="1.3" />
+                          <path
+                            d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                            stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_475_3193">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+
+                      </svg>
+                      <span class="calc__tooltip">
+                        Это интерьерные окна с различными декоративными элементами внутри стеклопакета или снаружи
+                        профиля. Цветные витражи разных типов, бевелсы, шпроссы и т.д.
+                      </span>
+                    </div>
+                  </label>
+                  <input value="Дизайнерские окна" name="designWindows" type="checkbox" id="calc-options-checkbox-six"
+                    class="calc-options__checkbox">
+                </div>
+
+
+                <div class="calc-options__group">
+                  <label class="calc-options__check-label" for="calc-options-checkbox-seven">
+                    <div class="calc-options__checkmark"></div>
+                    <div class="calc-options__desc">
+                      Мультипакет
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_475_3193)">
+                          <path
+                            d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                            stroke="#24B7B1" stroke-width="1.3" />
+                          <path
+                            d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                            stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_475_3193">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+
+                      </svg>
+                      <span class="calc__tooltip">
+                        Это уникальная технология, успешно сочетающая солнцезащиту и энергосбережение. С таким окном
+                        летом вам будет не жарко, а зимой тепло.
+                      </span>
+                    </div>
+                  </label>
+                  <input value="Мультипакет" name="multiPackage" type="checkbox" id="calc-options-checkbox-seven"
+                    class="calc-options__checkbox">
+                </div>
+
+
+                <div class="calc-options__group">
+                  <label class="calc-options__check-label" for="calc-options-checkbox-eight">
+                    <div class="calc-options__checkmark"></div>
+                    <div class="calc-options__desc">
+                      Ламинация
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_475_3193)">
+                          <path
+                            d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                            stroke="#24B7B1" stroke-width="1.3" />
+                          <path
+                            d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                            stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_475_3193">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+
+                      </svg>
+                      <span class="calc__tooltip">
+                        Это технология декорирования оконного профиля. На профиль наносится цветная пленка (состав -
+                        100% высококачественный ПВХ), которая обеспечивает дополнительную защиту наружного слоя профиля,
+                        и одновременно имитирует древесную или иные текстуры.
+                      </span>
+                    </div>
+                  </label>
+                  <input value="Ламинация (цветные)" name="lamination" type="checkbox" id="calc-options-checkbox-eight"
+                    class="calc-options__checkbox">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc__step" data-step="7" data-step-next="8" data-step-prew="6">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Конструкция добавлена
+                </h4>
+                <p class="calc__header-desc">
+                  На этом этапе Вы можете изменить количество выбранных конструкций или добавить другие конструкции к
+                  расчету. Если все окна добавлены, нажмите «Далее».
+                </p>
+              </div>
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  75%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 75%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div id="js-order-6"></div>
+
+            <div class="wiew-options__added">
+              <button id="js-add-button-new-product" class="wiew-options__btn">Добавить окно</button>
+            </div>
+          </div>
+
+          <div class="calc__step" data-step="8" data-step-next="9" data-step-prew="7">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Услуги по доставке и монтажу
+                  <div class="calc__tooltip-container">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_475_3193)">
+                        <path
+                          d="M8.0026 14.6663C11.6845 14.6663 14.6693 11.6816 14.6693 7.99967C14.6693 4.31778 11.6845 1.33301 8.0026 1.33301C4.32071 1.33301 1.33594 4.31778 1.33594 7.99967C1.33594 11.6816 4.32071 14.6663 8.0026 14.6663Z"
+                          stroke="#24B7B1" stroke-width="1.3" />
+                        <path
+                          d="M6.67188 5.65535C7.00521 4.99535 7.33854 4.66602 8.00521 4.66602C8.83588 4.66602 9.33854 5.32535 9.33854 5.98468C9.33854 6.64402 9.00521 6.97335 8.00521 7.63335V8.66602M8.00521 10.9993V11.3327"
+                          stroke="#24B7B1" stroke-width="1.3" stroke-linecap="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_475_3193">
+                          <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                      </defs>
+
+                    </svg>
+                    <span class="calc__tooltip">
+                      Какие бывают варианты открывания пластикового окна: их преимущества и недостатки.
+                    </span>
+                  </div>
+                </h4>
+
+                <p class="calc__header-desc">
+                  Укажите тип доставки и монтажа.
+                </p>
+              </div>
+
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  87%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 87%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="ordering-mounting">
+              <div id="js-delivery-option" class="ordering-mounting__body">
+                <p class="ordering-mounting__text">
+                  Доставка
+                </p>
+
+                <div class="ordering-mounting__group">
+                  <label class="ordering-mounting__label" for="select-city-one">
+                    <input value="г. Саранск" type="radio" checked id="select-city-one" name="delivery"
+                      class="ordering-mounting__input">
+                    <div class="ordering-mounting__checked"></div>
+                    <div class="ordering-mounting__name">г. Саранск</div>
+                  </label>
+                </div>
+
+                <div class="ordering-mounting__group">
+                  <label class="ordering-mounting__label" for="select-city-two">
+                    <input value="Самовывоз" type="radio" id="select-city-two" name="delivery"
+                      class="ordering-mounting__input">
+                    <div class="ordering-mounting__checked"></div>
+                    <div class="ordering-mounting__name">Самовывоз</div>
+                  </label>
+                </div>
+
+                <div class="ordering-mounting__group">
+                  <label class="ordering-mounting__label" for="select-city-three">
+                    <input value="Другое" type="radio" id="select-city-three" name="delivery"
+                      class="ordering-mounting__input">
+                    <div class="ordering-mounting__checked"></div>
+                    <div class="ordering-mounting__name">Другое</div>
+                  </label>
+                </div>
+                <div class="ordering-mounting__added-address">
+                  <input name="address" type="text" placeholder="Укажите район доставки" class="ordering-mounting__inpt"
+                    disabled>
+                  <span class="ordering-mounting__clear" onclick="this.previousElementSibling.value = ''">&times;</span>
+                </div>
+              </div>
+
+              <div class="ordering-mounting__body">
+                <p class="ordering-mounting__text">
+                  Монтаж
+                </p>
+
+                <div class="ordering-mounting__group">
+                  <label class="ordering-mounting__label" for="select-mounting-one">
+                    <input value="С монтажом" type="radio" checked id="select-mounting-one" name="montage"
+                      class="ordering-mounting__input">
+                    <div class="ordering-mounting__checked"></div>
+                    <div class="ordering-mounting__name">С монтажом</div>
+                  </label>
+                </div>
+
+                <div class="ordering-mounting__group">
+                  <label class="ordering-mounting__label" for="select-mounting-two">
+                    <input value="Без монтажа" type="radio" id="select-mounting-two" name="montage"
+                      class="ordering-mounting__input">
+                    <div class="ordering-mounting__checked"></div>
+                    <div class="ordering-mounting__name">Без монтажа</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc__step" data-step="9" data-step-next="false" data-step-prew="8">
+            <div class="calc__header">
+              <div class="calc__header-info">
+                <h4 class="calc__header-title">
+                  Отличный выбор! <br>У нас есть все данные для расчета.
+                </h4>
+                <p class="calc__header-desc"></p>
+              </div>
+
+              <div class="calc__header-num">
+                <div class="calc__header-procent">
+                  100%
+                </div>
+                <div class="calc__header-line">
+                  <span class="calc__header-blue-line" style="width: 100%;"></span>
+                </div>
+              </div>
+            </div>
+
+            <div id="js-order-9"></div>
+
+            <div class="ordering-mounting-info">
+              <div class="ordering-mounting-info__item">
+                <p class="ordering-mounting-info__text-gray">Доставка:</p>
+                <p id="js-delivery-9" class="ordering-mounting-info__text"></p>
+              </div>
+              <div class="ordering-mounting-info__item">
+                <p class="ordering-mounting-info__text-gray">Монтаж:</p>
+                <p id="js-montage-9" class="ordering-mounting-info__text"></p>
+              </div>
+            </div>
+
+            <form id="js-form-calc-result" class="calculation">
+              <div class="custom__CAPTCHA">
+                <p>очистить все поля в этой области и повторите отправку</p>
+                <input autocomplete="off" name="CAPTCHA_TEXT" value="" type="text">
+                <input autocomplete="off" name="CAPTCHA_TEL" value="" type="tel">
+                <input autocomplete="off" name="CAPTCHA_EMAIL" value="" type="email">
+                <textarea name="CAPTCHA_TEXTAREA"></textarea>
+              </div>
+              <!--
+              <label for="calculation-input-text" class="calculation__label">
+                  <p class="calculation__desc">
+                      Ваш расчёт
+                  </p>
+                  <input type="text" id="calculation-input-text" placeholder="" class="calculation__input">
+              </label>
+              -->
+
+              <input type="hidden" name="calcDataResult">
+
+              <div class="calculation__text">
+                По вашим параметрам возможно <span>несколько вариантов сметы.</span> Менеджер оперативно перезвонит вам
+                и расскажет о возможных вариантах.
+              </div>
+
+              <label for="calculation-input-phone" class="calculation__label">
+                <p class="calculation__desc">
+                  Телефон
+                </p>
+                <input name="phone" type="tel" id="calculation-input-phone" placeholder="+7 (999) 999-99-99"
+                  class="calculation__input">
+              </label>
+
+              <button id="js-form-calc-result-send" type="submit" class="calculation__button">Рассчитать
+                стоимость</button>
+
+              <p class="calculation__info">
+                Нажимая «Рассчитать стоимость» вы соглашаетесь
+                <a class="calculation__info-link" href="personal-data.html">на обработку ваших персональных данных</a>
+              </p>
+            </form>
+          </div>
+
+          <div class="calc__footer">
+            <div class="calc__buttons">
+              <button id="js-calc-button-prew" class="calc__button-prew">Назад</button>
+              <button id="js-calc-button-next" class="calc__button-next">Далее</button>
+            </div>
+            <div class="calc__footer-desc">
+              Стоимость окна, полученная при помощи нашего сервиса «Онлайн-калькулятор» не является офертой по смыслу
+              ст. 435 ГК РФ. Цена может измениться по разным причинам: подключение дополнительных опций, выбор
+              комплектующих для внутренней и наружной отделки окон, сложности монтажа и прочих условий. Поэтому если Вы
+              хотите узнать точную стоимость окна – <a href="#send-request-modal" data-fancybox>запишитесь на замер</a>.
+              В большинстве случаев эта услуга для Вас абсолютно бесплатна.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h3 class="about__title-mobile">О нас</h3>
+
+        <div class="about__list-wrapper swiper mySwiper">
+          <ul class="about__list swiper-wrapper">
+            <li class="about__item swiper-slide">
+              <h3 class="about__title">
+                О нас
+                </h4>
+
+                <p class="about__info">
+                  Компания E-okna – это проект профессионалов
+                  с многолетним опытом в сфере ПВХ-конструкций решивших сделать новую ни на что не похожую
+                  компанию с
+                  предельным
+                  вниманием к качеству продукции и технологичности (а значит и удобству для клиента)
+                  сопровождающих покупку
+                  окон
+                  сервисных услуг.
+                </p>
+              </h3>
+            </li>
+            <li class="about__item swiper-slide">
+              <p class="about__text">
+                В действующей системе просто невозможно некачественно выполнить заказ:
+              </p>
+              <p class="about__text">
+                Фотоотчет бригады о монтаже
+              </p>
+              <p class="about__text">
+                Звонок службы контроля качества после монтажа
+              </p>
+              <p class="about__text">
+                Выборочный приезд эксперта для детального контроля
+              </p>
+            </li>
+            <li class="about__item swiper-slide">
+              <p class="about__bisnes">
+                Прозрачная и понятная система контроля качества лежит в основе нашего бизнеса.
+              </p>
+            </li>
+            <li class="about__item swiper-slide">
+              <p class="about__benifist">
+                Возможность в два клика оставить отзыв о нас в любой социальной сети, либо поисковой
+                системе, делают нашу
+                работу
+                максимально прозрачной, а выполнение заказа всегда безупречным.
+              </p>
+            </li>
+          </ul>
+          <div class="swiper-pagination about__pagination"></div>
+        </div>
+
+
+        <div class="about__btn">
+          <a class="about__btn-link" href="">Отправить заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal start -->
+
+    <div class="modal__wrapper" id="send-request-modal" style="display: none;">
+      <div class="modal">
+        <div class="modal__header">
+          <div class="modal__title"><span>Ваша заявка</span></div>
+          <div data-fancybox-close class="modal__close"><img src="./img/cancel.svg" alt="cancel" width="18px"
+              height="18px"></div>
+        </div>
+        <div id="js-form-send-request-message-error" class="modal__header-error" style="display: none">
+          <div class="message-error"></div>
+        </div>
+        <div class="modal__body modal-form">
+          <form id="js-form-send-request" class="modal-form__inner">
+            <div class="custom__CAPTCHA">
+              <p>очистить все поля в этой области и повторите отправку</p>
+              <input autocomplete="off" name="CAPTCHA_TEXT" value="" type="text">
+              <input autocomplete="off" name="CAPTCHA_TEL" value="" type="tel">
+              <input autocomplete="off" name="CAPTCHA_EMAIL" value="" type="email">
+              <textarea name="CAPTCHA_TEXTAREA"></textarea>
+            </div>
+            <div class="modal-form__group">
+              <label>Имя</label>
+              <input autocomplete="off" type="text" name="name" placeholder="Укажите имя" class="modal-form__input">
+              <span class="modal-form__clear js-input-clear" data-input-name="name">&times;</span>
+              <span class="modal-form__error-text">Ошибка: Неправильный ввод текста</span>
+            </div>
+            <div class="modal-form__group">
+              <label for="">Телефон</label>
+              <input autocomplete="off" type="tel" name="phone" placeholder="+7 (999) 999-99-99"
+                class="modal-form__input">
+              <span class="modal-form__clear js-input-clear" data-input-name="phone">&times;</span>
+              <span class="modal-form__error-text">Ошибка: Неправильный ввод текста</span>
+            </div>
+            <div class="modal-form__group">
+              <label for="">Адрес</label>
+              <input autocomplete="off" type="text" name="address" placeholder="Cаранск, улица Коммунистическая, 1"
+                class="modal-form__input">
+              <span class="modal-form__clear js-input-clear" data-input-name="address">&times;</span>
+              <span class="modal-form__error-text">Ошибка: Неправильный ввод текста</span>
+            </div>
+            <div class="modal-form__group">
+              <label for="">Вопрос</label>
+              <textarea autocomplete="off" name="message" class="modal-form__textarea"
+                placeholder="Комментарий..."></textarea>
+              <span class="modal-form__error-text">Ошибка: Неправильный ввод текста</span>
+            </div>
+            <div class="modal-form__group">
+              <label class="modal-form__check-label" for="form-checkbox">
+                <div class="checkmark"></div>
+                <span>Согласие на <a href="personal-data.html" target="_blank">обработку персональных данных</a></span>
+              </label>
+              <input type="checkbox" name="checkPersonalData" class="modal-form__checkbox" checked>
+              <button type="submit" class="modal-form__button">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-windows__modal" id="custom-windows-modal" style="display: none;">
+      <form id="js-form-custom-window">
+
+
+        <div class="custom-windows__header">
+          <h4 class="custom-windows__title">
+            Ваша заявка
+          </h4>
+          <div class="modal__close" data-fancybox-close><img src="./img/cancel.svg" alt="cancel" width="18px"
+              height="18px"></div>
+        </div>
+        <div id="js-form-custom-windows-message-error" class="modal__header-error" style="display: none">
+          <div class="message-error"></div>
+        </div>
+        <div class="custom__CAPTCHA">
+          <p>очистить все поля в этой области и повторите отправку</p>
+          <input name="CAPTCHA_TEXT" value="" type="text">
+          <input name="CAPTCHA_TEL" value="" type="tel">
+          <input name="CAPTCHA_EMAIL" value="" type="email">
+          <textarea name="CAPTCHA_TEXTAREA"></textarea>
+        </div>
+        <p class="custom-windows__text">
+          Оставьте ваш номер телефона, мы согласуем удобное для вас время замера ваших
+          нестандартных конструкций. Это бесплатно.
+        </p>
+        <label class="custom-windows__label">
+          <p class="custom-windows__phone">
+            Телефон
+          </p>
+          <input autocomplete="off" type="tel" name="phone" placeholder="+7 (999) 999-99-99"
+            class="custom-windows__input">
+        </label>
+        <input type="hidden" name="form" value="formCustomWindow">
+        <button type="submit" class="custom-windows__button">Отправить</button>
+      </form>
+    </div>
+
+    <div class="custom-windows__modal" id="calculator-result-modal" style="display: none;">
+      <div class="modal__header">
+        <div class="modal__title" style="font-size: 25px; line-height: 30px; color: black"><span>Спасибо за интерес к
+            нашей продукции</span></div>
+        <div class="modal__close" data-fancybox-close><img src="./img/cancel.svg" alt="cancel" width="18px"
+            height="18px"></div>
+      </div>
+      <div class="modal__body modal-form">
+        <p class="calculator-message"></p>
+      </div>
+    </div>
+
+    <!-- Modal end -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="#header">
+              <img class="footer__logo-img" src="img/logo-footer.svg" alt="логотип">
+              <img class="footer__logo-img--mobile" src="img/logo-footer-mobile.svg" alt="логотип">
+            </a>
+
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" target="_blank" href="https://vk.com/e_okna_saransk">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#E7E7E7" />
+                    <path
+                      d="M29.8055 25.1153C29.8055 25.0322 29.7225 25.0322 29.7225 24.9492C29.3904 24.285 28.6432 23.4548 27.6469 22.5416C27.1488 22.1264 26.8997 21.7943 26.7337 21.6283C26.4846 21.2962 26.4846 21.0471 26.5676 20.715C26.6507 20.466 26.9827 20.0509 27.5639 19.3036C27.896 18.8885 28.062 18.6395 28.3111 18.3904C29.5564 16.7299 30.1376 15.6506 29.9716 15.1525L29.8886 15.0695C29.8055 14.9865 29.7225 14.9034 29.5564 14.9034C29.3904 14.8204 29.1413 14.8204 28.8923 14.9034H25.7374C25.6544 14.9034 25.6544 14.9034 25.4883 14.9034C25.4053 14.9034 25.3223 14.9034 25.3223 14.9034H25.2393H25.1562L25.0732 14.9865C24.9902 15.0695 24.9902 15.0695 24.9902 15.1525C24.6581 16.0658 24.243 16.813 23.8279 17.6432C23.5788 18.0583 23.3297 18.4734 23.0807 18.8055C22.8316 19.1376 22.6655 19.3867 22.4995 19.5527C22.3335 19.7188 22.1674 19.8018 22.0844 19.9678C22.0014 20.0509 21.8353 20.1339 21.8353 20.0509C21.7523 20.0509 21.6693 20.0509 21.6693 19.9678C21.5862 19.8848 21.5032 19.8018 21.4202 19.7188C21.3372 19.6357 21.3372 19.4697 21.2542 19.3036C21.2542 19.1376 21.2542 18.9716 21.2542 18.8885C21.2542 18.8055 21.2542 18.5564 21.2542 18.3904C21.2542 18.1413 21.2542 17.9753 21.2542 17.8923C21.2542 17.6432 21.2542 17.3111 21.2542 16.979C21.2542 16.6469 21.2542 16.3978 21.2542 16.2318C21.2542 16.0658 21.2542 15.8167 21.2542 15.6506C21.2542 15.4016 21.2542 15.2355 21.2542 15.1525C21.2542 15.0695 21.1712 14.9034 21.1712 14.8204C21.0881 14.7374 21.0051 14.6544 20.9221 14.5713C20.839 14.4883 20.673 14.4883 20.59 14.4053C20.1749 14.3223 19.6767 14.2393 19.0956 14.2393C17.7672 14.2393 16.854 14.3223 16.5219 14.4883C16.3558 14.5714 16.1898 14.6544 16.1067 14.8204C15.9407 14.9865 15.9407 15.0695 16.0237 15.0695C16.4388 15.1525 16.7709 15.3185 16.937 15.5676L17.02 15.7337C17.103 15.8167 17.103 15.9827 17.186 16.2318C17.2691 16.4809 17.2691 16.7299 17.2691 17.062C17.2691 17.5602 17.2691 18.0583 17.2691 18.3904C17.2691 18.8055 17.186 19.0546 17.186 19.3036C17.186 19.5527 17.103 19.7188 17.02 19.8018C16.937 19.9678 16.937 20.0509 16.8539 20.0509C16.8539 20.0509 16.8539 20.1339 16.7709 20.1339C16.6879 20.1339 16.6049 20.2169 16.4388 20.2169C16.3558 20.2169 16.1898 20.1339 16.1067 20.0509C15.9407 19.9678 15.7747 19.8018 15.6916 19.6357C15.5256 19.4697 15.3595 19.2206 15.1935 18.8885C15.0274 18.5564 14.7784 18.2244 14.6123 17.7262L14.4463 17.3941C14.3633 17.2281 14.1972 16.896 14.0312 16.4809C13.8651 16.0658 13.6991 15.7337 13.533 15.3186C13.45 15.1525 13.367 15.0695 13.284 14.9865H13.2009C13.2009 14.9865 13.1179 14.9034 13.0349 14.9034C12.9519 14.9034 12.8689 14.8204 12.7858 14.8204H9.797C9.46491 14.8204 9.29886 14.9034 9.21584 14.9865L9.13281 15.0695C9.13281 15.0695 9.13281 15.1525 9.13281 15.2355C9.13281 15.3186 9.13282 15.4016 9.21584 15.5676C9.63096 16.5639 10.1291 17.5602 10.6272 18.5564C11.1254 19.4697 11.6235 20.2999 11.9556 20.8811C12.3707 21.4623 12.7028 22.0434 13.1179 22.5416C13.533 23.0397 13.7821 23.3718 13.8651 23.5378C14.0312 23.7039 14.1142 23.7869 14.1972 23.8699L14.4463 24.119C14.6123 24.285 14.8614 24.5341 15.1935 24.7832C15.5256 25.0322 15.9407 25.2813 16.3558 25.5304C16.7709 25.7794 17.2691 25.9455 17.7672 26.1115C18.3484 26.2776 18.8465 26.3606 19.3446 26.2776H20.59C20.839 26.2776 21.0051 26.1946 21.1712 26.0285L21.2542 25.9455C21.2542 25.8625 21.3372 25.8625 21.3372 25.7794C21.3372 25.6964 21.3372 25.6134 21.3372 25.4474C21.3372 25.1153 21.3372 24.8662 21.4202 24.6171C21.5032 24.3681 21.5032 24.202 21.5863 24.036C21.6693 23.8699 21.7523 23.7869 21.8353 23.7039C21.9183 23.6208 22.0014 23.5378 22.0014 23.5378H22.0844C22.2504 23.4548 22.4995 23.5378 22.6656 23.7039C22.9146 23.8699 23.1637 24.119 23.3297 24.3681C23.4958 24.6171 23.7449 24.8662 24.077 25.1983C24.409 25.5304 24.6581 25.7794 24.8242 25.8625L25.0732 26.0285C25.2393 26.1115 25.4053 26.1946 25.6544 26.2776C25.9035 26.3606 26.0695 26.3606 26.2355 26.3606L29.0583 26.2776C29.3074 26.2776 29.5565 26.1946 29.7225 26.1115C29.8885 26.0285 29.9716 25.9455 29.9716 25.7794C29.9716 25.6964 29.9716 25.5304 29.9716 25.4474C29.8055 25.2813 29.8055 25.1983 29.8055 25.1153Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h6 class="footer__item-title">Меню</h6>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link js-scroll" href="#offer">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link js-scroll" href="#calc">Калькулятор</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link js-scroll" href="#about">О нас</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <h6 class="footer__item-title">Контакты</h6>
+            </li>
+            <li class="footer__item">
+              <address class="footer__item-address">г. Саранск, ул. Пролетарская, д. 92а</address>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="tel:+78342310900">+7(8342)310-900</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="mailto:info@e-okna.ru">info@e-okna.ru</a>
+            </li>
+          </ul>
+
+          <ul class="footer__socials-mobile">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="#">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="20" fill="#E7E7E7" />
+                  <path
+                    d="M29.8055 25.1153C29.8055 25.0322 29.7225 25.0322 29.7225 24.9492C29.3904 24.285 28.6432 23.4548 27.6469 22.5416C27.1488 22.1264 26.8997 21.7943 26.7337 21.6283C26.4846 21.2962 26.4846 21.0471 26.5676 20.715C26.6507 20.466 26.9827 20.0509 27.5639 19.3036C27.896 18.8885 28.062 18.6395 28.3111 18.3904C29.5564 16.7299 30.1376 15.6506 29.9716 15.1525L29.8886 15.0695C29.8055 14.9865 29.7225 14.9034 29.5564 14.9034C29.3904 14.8204 29.1413 14.8204 28.8923 14.9034H25.7374C25.6544 14.9034 25.6544 14.9034 25.4883 14.9034C25.4053 14.9034 25.3223 14.9034 25.3223 14.9034H25.2393H25.1562L25.0732 14.9865C24.9902 15.0695 24.9902 15.0695 24.9902 15.1525C24.6581 16.0658 24.243 16.813 23.8279 17.6432C23.5788 18.0583 23.3297 18.4734 23.0807 18.8055C22.8316 19.1376 22.6655 19.3867 22.4995 19.5527C22.3335 19.7188 22.1674 19.8018 22.0844 19.9678C22.0014 20.0509 21.8353 20.1339 21.8353 20.0509C21.7523 20.0509 21.6693 20.0509 21.6693 19.9678C21.5862 19.8848 21.5032 19.8018 21.4202 19.7188C21.3372 19.6357 21.3372 19.4697 21.2542 19.3036C21.2542 19.1376 21.2542 18.9716 21.2542 18.8885C21.2542 18.8055 21.2542 18.5564 21.2542 18.3904C21.2542 18.1413 21.2542 17.9753 21.2542 17.8923C21.2542 17.6432 21.2542 17.3111 21.2542 16.979C21.2542 16.6469 21.2542 16.3978 21.2542 16.2318C21.2542 16.0658 21.2542 15.8167 21.2542 15.6506C21.2542 15.4016 21.2542 15.2355 21.2542 15.1525C21.2542 15.0695 21.1712 14.9034 21.1712 14.8204C21.0881 14.7374 21.0051 14.6544 20.9221 14.5713C20.839 14.4883 20.673 14.4883 20.59 14.4053C20.1749 14.3223 19.6767 14.2393 19.0956 14.2393C17.7672 14.2393 16.854 14.3223 16.5219 14.4883C16.3558 14.5714 16.1898 14.6544 16.1067 14.8204C15.9407 14.9865 15.9407 15.0695 16.0237 15.0695C16.4388 15.1525 16.7709 15.3185 16.937 15.5676L17.02 15.7337C17.103 15.8167 17.103 15.9827 17.186 16.2318C17.2691 16.4809 17.2691 16.7299 17.2691 17.062C17.2691 17.5602 17.2691 18.0583 17.2691 18.3904C17.2691 18.8055 17.186 19.0546 17.186 19.3036C17.186 19.5527 17.103 19.7188 17.02 19.8018C16.937 19.9678 16.937 20.0509 16.8539 20.0509C16.8539 20.0509 16.8539 20.1339 16.7709 20.1339C16.6879 20.1339 16.6049 20.2169 16.4388 20.2169C16.3558 20.2169 16.1898 20.1339 16.1067 20.0509C15.9407 19.9678 15.7747 19.8018 15.6916 19.6357C15.5256 19.4697 15.3595 19.2206 15.1935 18.8885C15.0274 18.5564 14.7784 18.2244 14.6123 17.7262L14.4463 17.3941C14.3633 17.2281 14.1972 16.896 14.0312 16.4809C13.8651 16.0658 13.6991 15.7337 13.533 15.3186C13.45 15.1525 13.367 15.0695 13.284 14.9865H13.2009C13.2009 14.9865 13.1179 14.9034 13.0349 14.9034C12.9519 14.9034 12.8689 14.8204 12.7858 14.8204H9.797C9.46491 14.8204 9.29886 14.9034 9.21584 14.9865L9.13281 15.0695C9.13281 15.0695 9.13281 15.1525 9.13281 15.2355C9.13281 15.3186 9.13282 15.4016 9.21584 15.5676C9.63096 16.5639 10.1291 17.5602 10.6272 18.5564C11.1254 19.4697 11.6235 20.2999 11.9556 20.8811C12.3707 21.4623 12.7028 22.0434 13.1179 22.5416C13.533 23.0397 13.7821 23.3718 13.8651 23.5378C14.0312 23.7039 14.1142 23.7869 14.1972 23.8699L14.4463 24.119C14.6123 24.285 14.8614 24.5341 15.1935 24.7832C15.5256 25.0322 15.9407 25.2813 16.3558 25.5304C16.7709 25.7794 17.2691 25.9455 17.7672 26.1115C18.3484 26.2776 18.8465 26.3606 19.3446 26.2776H20.59C20.839 26.2776 21.0051 26.1946 21.1712 26.0285L21.2542 25.9455C21.2542 25.8625 21.3372 25.8625 21.3372 25.7794C21.3372 25.6964 21.3372 25.6134 21.3372 25.4474C21.3372 25.1153 21.3372 24.8662 21.4202 24.6171C21.5032 24.3681 21.5032 24.202 21.5863 24.036C21.6693 23.8699 21.7523 23.7869 21.8353 23.7039C21.9183 23.6208 22.0014 23.5378 22.0014 23.5378H22.0844C22.2504 23.4548 22.4995 23.5378 22.6656 23.7039C22.9146 23.8699 23.1637 24.119 23.3297 24.3681C23.4958 24.6171 23.7449 24.8662 24.077 25.1983C24.409 25.5304 24.6581 25.7794 24.8242 25.8625L25.0732 26.0285C25.2393 26.1115 25.4053 26.1946 25.6544 26.2776C25.9035 26.3606 26.0695 26.3606 26.2355 26.3606L29.0583 26.2776C29.3074 26.2776 29.5565 26.1946 29.7225 26.1115C29.8885 26.0285 29.9716 25.9455 29.9716 25.7794C29.9716 25.6964 29.9716 25.5304 29.9716 25.4474C29.8055 25.2813 29.8055 25.1983 29.8055 25.1153Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__confidentiality">
+            <a class="footer__confidentiality-link" target="_blank" href="http://e-okna.ru/personal-data.html"> Политика
+              конфиденциальности</a>
+          </div>
+          <div class="footer__copy">
+            <p class="footer__copy-text">
+              ООО «Е-ОКНА», ИНН: 1300001906
+            </p>
+
+            <p class="footer__copy-text">
+              2021-2022 © Copyright www.e-okna.ru Все права защищены.
+            </p>
+          </div>
+          <div class="footer__made">
+            Разработано: <a class="footer__made-link" href=""><img src="img/made-footer.svg"
+                alt="Разработано в Impulse IT"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/jquery.maskedinput.min.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>
+<script src="./js/form.js"></script>
+<script src="./js/calculator.js"></script>
+<script src="./js/scripts.js"></script>
+
+<script>
+  (function (w, d, u) {
+    var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 60000 | 0);
+    var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h);
+  })(window, document, 'https://cdn-ru.bitrix24.ru/b22465346/crm/site_button/loader_1_pmaqzv.js');
+
+  const formParams = {
+    inputPhone: document.querySelectorAll('input[name="phone"]'),
+    /**
+     * Ваша заявка
+     */
+    formSendRequest: document.querySelector('#js-form-send-request'),
+    /**
+     * Нестандартное окно
+     */
+    formCustomWindow: document.querySelector('#js-form-custom-window'),
+  };
+  Object.assign(Form.prototype, formParams);
+  new Form();
+
+  const calculatorParams = {
+    calculator: document.querySelector('#js-form-calc'),
+    buttonNext: document.querySelector('#js-calc-button-next'),
+    buttonPrew: document.querySelector('#js-calc-button-prew'),
+  };
+  Object.assign(Calculator.prototype, calculatorParams);
+  new Calculator();
+</script>
+
+</html>
